@@ -1,0 +1,156 @@
+.page {
+  position: absolute;
+  width: 100%;
+  min-width: 1140px;
+  .header {
+    background: #f7edeb;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 415px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    .logo {
+      padding-left: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 80px;
+      .logo-img {
+        cursor: pointer;
+        height: 40px;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .ajuda {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .help-icon {
+          margin-right: 6px;
+        }
+      }
+      .separador {
+        height: 70px;
+        border-right: 1px solid rgba(0, 0, 0, 0.22);
+        margin: 0 20px;
+      }
+      .info-usuario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .iniciais {
+          border-radius: 50%;
+          height: 65px;
+          width: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #1a346e;
+          color: white;
+          font-size: 15px;
+        }
+        .usuario {
+          margin-left: 10px;
+          min-width: 150px;
+          max-width: 200px;
+          .nome-usuario {
+            font-weight: bold;
+          }
+          .empresa-usuario {
+            font-weight: 500;
+            color: #8b8b8b;
+          }
+        }
+        .botao-info {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .body {
+    padding: 130px 50px 0 50px;
+    .titulo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .nova-solicitacao {
+      .body-nova-solicitacao {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        .inputs {
+          .grid-3-inputs {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 10px;
+          }
+          .grid-4-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+          }
+        }
+      }
+      .botao {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .adicionar-solicitacao {
+          color: white;
+          width: 200px;
+          background: #f07320;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .disabled {
+          background: #f073204f;
+          cursor: default;
+        }
+        .limpar-solicitacao {
+          color: white;
+          width: 30px;
+          margin-right: 10px;
+          background: #f07320;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .minhas-solicitacoes {
+      margin-top: 50px;
+      .body-minhas-solicitacoes {
+        margin-top: 30px;
+        .table-solicitacoes {
+          width: 100%;
+          table {
+            width: 100%;
+          }
+          td {
+            height: 80px;
+          }
+          th {
+            font-weight: bolder;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
